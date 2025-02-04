@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	background-color: #1A2A33;
+    font-family: "Outfit", serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 10%;
+}
+
+.result-p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.64px;
+    color: #1A2A33;
+    letter-spacing: 0.875px;
+}
+
+.p-result {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25.2px;
+    color: #1A2A33;
+    letter-spacing: 1.25px;
+}
+
+.p-turn {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    color: silver;
+    letter-spacing: 0.88px;
+}
+
+.logo-boite {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.turn-player {
+    background-color: #1F3641;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    box-shadow: 0px -4px 0px 0px #10212A inset;
+    padding: 13px;
+    border-radius: 5px;
+}
+
+.reload-btn {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px -4px 0px 0px #6B8997 inset;
+    height: 100%;
+    padding: 12px;
+	background-color: #A8BFC9;
+}
+
+.case-div {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+    justify-content: center;
+	gap: 31px;
+    padding: 15px;
+}
+
+.case-game {
+	border: none;
+    border-radius: 10px;
+    box-shadow: 0px -8px 0px 0px #10212A inset;
+	width: 100%;
+	height: 100%;
+	background-color: #1F3641;
+    padding: 30px 0px 30px 0px;
+}
+
+#btn-img {
+    width: 40px;
+}
+
+.stat-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    gap: 31px;
+
+}
+
+.stat-x{
+    text-align: center;
+    color: black;
+    width: 100%;
+    padding: 12px ;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    color: #1A2A33;
+    border-radius: 10px;
+    background-color: #31C3BD;
+}
+
+.stat-tie {
+    background-color: #A8BFC9;
+    text-align: center;
+    color: black;
+    width: 100%;
+    padding: 12px ;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    color: #1A2A33;
+    border-radius: 10px;
+}
+
+.stat-cpu {
+    background-color: #F2B137;
+    text-align: center;
+    color: black;
+    width: 100%;
+    padding: 12px ;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    color: #1A2A33;
+    border-radius: 10px;
+}
+
+.o-winner-div {
+    position: absolute;
+    top: 35%;
+    background-color: #1F3641;
+    width: 100%;
+    z-index: 2;
+    display: none;
+}
+
+.x-winner-div{
+    position: absolute;
+    top: 35%;
+    background-color: #1F3641;
+    width: 100%;
+    z-index: 2;
+    display: none;
+}
+
+.tie-div {
+    position: absolute;
+    top: 35%;
+    background-color: #1F3641;
+    width: 100%;
+    z-index: 2;
+    display: none; 
+}
+
+.restart-div {
+    position: absolute;
+    top: 35%;
+    background-color: #1F3641;
+    width: 100%;
+    z-index: 2;
+    display: none;
+}
+
+.p-winner-loser {
+    color: #A8BFC9;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+
+.txt-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.o-winner-h1 {
+    color: #F2B137;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.x-winner-h1 {
+    color: #31C3BD;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.restart-text, .tie-text {
+    color: #A8BFC9;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.btn-div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.quit-btn, .cancel-btn{
+    padding: 15px 16px 17px 16px;
+    background-color: #A8BFC9;
+    box-shadow: 0px -4px 0px 0px #6B8997 inset;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #1A2A33;
+}
+
+.next-btn, .restart-btn {
+    padding: 15px 16px 17px 16px;
+    background-color: #F2B137;
+    box-shadow: 0px -4px 0px 0px #CC8B13 inset;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #1A2A33;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    header {
+        width: 50%;
+        margin: 0;
+    }
+
+    .result-p {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+
+    .o-winner-h1 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px;
+    }
+    
+    .x-winner-h1 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px;
+    }
+
+    .restart-text {
+        margin-bottom: 5%;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px;
+        letter-spacing: 2.5px;
+    }
+
+    .case-game {
+        padding: 30px;
+    }
+
+    .case-div {
+        gap: 10px;
+    }
+
+    .stat-div {
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    header {
+        width: 25%;
+    }
+}
