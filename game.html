@@ -7,7 +7,7 @@
 		<title>tic-tac-toe-game</title>
 	</head>
 	<body>
-		<header>
+		<header id="game-page">
 			<div class="logo-boite">
                 <img src="Combined Shape Copy.svg" alt="croix-icon">
                 <img src="Oval Copy.svg" alt="rond-icon">
@@ -21,33 +21,58 @@
 			</button>
 		</header>
 		<main>
+            <div class="menu-player">
+                <div class="logo-boite1">
+                    <img src="Combined Shape Copy.svg" alt="croix-icon">
+                    <img src="Oval Copy.svg" alt="rond-icon">
+                </div>
+                <div class="pick-player-boite">
+                    <h1>PICK PLAYER 1'S MARK</h1>
+                    <div class="btn-player-div">
+                        <div class="x-btn">
+                        <button class="x-nonactive-btn"><img src="Combined Shape Copy 2.svg" alt="croix-icon"></button>
+                        <button class="x-active-btn"><img src="Combined Shape Copy 2 (2).svg" alt="croix-icon"></button>
+                        </div>
+                        <div class="o-btn">
+                        <button class="o-active-btn"><img src="Oval Copy (1).svg" alt="rond-icon"></button>
+                        <button class="o-nonactive-btn"><img src="Oval Copy (2).svg" alt="rond-icon"></button>
+                        </div>
+                    </div>
+                    <h2>REMEMBER : X GOES FIRST</h2>
+                </div>
+                <div class="game-mode-boite">
+                    <button class="game-cpu">NEW GAME (VS CPU)</button>
+                    <button class="game-player">NEW GAME (VS PLAYER)</button>
+                </div>
+            </div>
+            <div class="game-boite" id="game-page">
 			<div class="case-div">
 				<button class="case-game">
-					<img id="btn-img" src="Combined Shape Copy.svg" alt="" />
+					<img id="btn-img" src="" alt="" />
 				</button>
 				<button class="case-game">
-					<img id="btn-img" src="Oval Copy.svg" alt="" />
+					<img id="btn-img" src="" alt="" />
 				</button>
 				<button class="case-game">
-					<img id="btn-img" src="Combined Shape Copy.svg" alt="" />
+					<img id="btn-img" src="" alt="" />
 				</button>
 				<button class="case-game">
-					<img id="btn-img" src="Oval Copy.svg" alt="" />
+					<img id="btn-img" src="" alt="" />
 				</button>
 				<button class="case-game">
-					<img id="btn-img" src="Combined Shape Copy.svg" alt="" />
+					<img id="btn-img" src="" alt="" />
 				</button>
 				<button class="case-game">
-					<img id="btn-img" src="Oval Copy.svg" alt="" />
+					<img id="btn-img" src="" alt="" />
 				</button>
 				<button class="case-game">
-					<img id="btn-img" src="Combined Shape Copy.svg" alt="" />
+					<img id="btn-img" src="" alt="" />
 				</button>
 				<button class="case-game">
-					<img id="btn-img" src="Oval Copy.svg" alt="" />
+					<img id="btn-img" src="" alt="" />
 				</button>
 				<button class="case-game">
-					<img id="btn-img" src="Combined Shape Copy.svg" alt="" />
+					<img id="btn-img" src=" " alt="" />
 				</button>
 			</div>
 			<div class="stat-div">
@@ -64,6 +89,7 @@
 					<p class="p-result">11</p>
 				</div>
 			</div>
+            <div class="o-winner-boite">
 			<div class="o-winner-div">
 				<p class="p-winner-loser">OH NO, YOU LOST...</p>
 				<div class="txt-div">
@@ -75,6 +101,8 @@
 					<button class="next-btn">NEXT ROUND</button>
 				</div>
 			</div>
+            </div>
+            <div class="x-winner-boite">
 			<div class="x-winner-div">
 				<p class="p-winner-loser">YOU WON!</p>
 				<div class="txt-div">
@@ -86,6 +114,8 @@
 					<button class="next-btn">NEXT ROUND</button>
 				</div>
 			</div>
+            </div>
+            <div class="tie-boite">
             <div class="tie-div">
                 <div class="txt-div">
 				<h1 class="tie-text">ROUND TIED</h1>
@@ -95,6 +125,8 @@
 					<button class="next-btn">NEXT ROUND</button>
                 </div>
             </div>
+          </div>
+          <div class="restart-boite">
             <div class="restart-div">
                 <div class="txt-div">
 				<h1 class="restart-text">RESTART GAME?</h1>
@@ -104,6 +136,10 @@
 					<button class="restart-btn">YES, RESTART</button>
                 </div>
             </div>
+        </div>
+        </div>
 		</main>
+        <script src="index.js"></script>
+        <script src="game.js"></script>
 	</body>
 </html>
